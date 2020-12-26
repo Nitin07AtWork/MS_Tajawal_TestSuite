@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="6" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="19" time="33.402567">
-<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="1) Verify hotel details are fetched for location - &lt;query&gt;" time="12.375435">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="6" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="19" time="27.066813">
+<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="1) Verify hotel details are fetched for location - &lt;query&gt;" time="9.733117">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass queryParameters..................................................passed
@@ -9,7 +9,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - invalid location value-special chars" time="1.964237">
+<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - invalid location value-special chars" time="1.76493">
 <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)&#13;&#10;&#9;at ✽.And response Body contains(GETHotelsByLocation.feature:40)&#13;&#10;"><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass queryParameters..................................................passed
@@ -27,7 +27,7 @@ java.lang.AssertionError
 	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
 ]]></failure>
 </testcase>
-<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - invalid location value-location doesn't exist" time="1.699481">
+<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - invalid location value-location doesn't exist" time="1.334615">
 <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)&#13;&#10;&#9;at ✽.And response Body contains(GETHotelsByLocation.feature:40)&#13;&#10;"><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass queryParameters..................................................passed
@@ -45,7 +45,7 @@ java.lang.AssertionError
 	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
 ]]></failure>
 </testcase>
-<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - passing empty value" time="1.065509">
+<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - passing empty value" time="0.880133">
 <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)&#13;&#10;&#9;at ✽.And response Body contains(GETHotelsByLocation.feature:40)&#13;&#10;"><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass queryParameters..................................................passed
@@ -63,7 +63,7 @@ java.lang.AssertionError
 	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
 ]]></failure>
 </testcase>
-<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - passing invalid value" time="1.005888">
+<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - passing invalid value" time="0.830805">
 <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)&#13;&#10;&#9;at ✽.And response Body contains(GETHotelsByLocation.feature:40)&#13;&#10;"><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass queryParameters..................................................passed
@@ -81,7 +81,7 @@ java.lang.AssertionError
 	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
 ]]></failure>
 </testcase>
-<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - passing empty query param" time="0.981634">
+<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - passing empty query param" time="0.937398">
 <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)&#13;&#10;&#9;at ✽.And response Body contains(GETHotelsByLocation.feature:40)&#13;&#10;"><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass queryParameters..................................................passed
@@ -99,7 +99,7 @@ java.lang.AssertionError
 	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
 ]]></failure>
 </testcase>
-<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - passing empty query param  and value" time="0.895254">
+<testcase classname="GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter" name="2) Verify error code and description for negative values - passing empty query param  and value" time="0.812512">
 <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)&#13;&#10;&#9;at ✽.And response Body contains(GETHotelsByLocation.feature:40)&#13;&#10;"><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass queryParameters..................................................passed
@@ -117,17 +117,7 @@ java.lang.AssertionError
 	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
 ]]></failure>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="1) Verify that search action is performed for the payload." time="1.447796">
-<system-out><![CDATA[Given Testing environment...................................................passed
-When I pass headers.........................................................passed
-And I pass body as "postSearchRequests".....................................passed
-And I perform POST operation "postSearchRequests"...........................passed
-Then I should get "200" response............................................passed
-And response content Type is json...........................................passed
-And response Body contains..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="2) Validate mandatory fields in the payload-mandatory check-checkin date" time="1.121988">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="1) Verify that search action is performed for the payload." time="1.284862">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -137,7 +127,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="2) Validate mandatory fields in the payload-mandatory check-checkout date" time="1.010299">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="2) Validate mandatory fields in the payload-mandatory check-checkin date" time="0.877929">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -147,7 +137,17 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="2) Validate mandatory fields in the payload-mandatory check-destination" time="1.110467">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="2) Validate mandatory fields in the payload-mandatory check-checkout date" time="0.928664">
+<system-out><![CDATA[Given Testing environment...................................................passed
+When I pass headers.........................................................passed
+And I pass body as "postSearchRequests".....................................passed
+And I perform POST operation "postSearchRequests"...........................passed
+Then I should get "200" response............................................passed
+And response content Type is json...........................................passed
+And response Body contains..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="2) Validate mandatory fields in the payload-mandatory check-destination" time="0.817092">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -157,7 +157,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="2) Validate mandatory fields in the payload-mandatory check-placeId" time="1.143777">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="2) Validate mandatory fields in the payload-mandatory check-placeId" time="0.798959">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -167,7 +167,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-checkin date format validation" time="1.391135">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-checkin date format validation" time="0.842323">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -177,7 +177,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-checkin date greater than checkout" time="1.133459">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-checkin date greater than checkout" time="0.901898">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -187,7 +187,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-format check-checkout date" time="1.080122">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-format check-checkout date" time="0.847235">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -197,7 +197,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-checkout date less than check in date" time="1.020255">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-checkout date less than check in date" time="0.845649">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -207,7 +207,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-format check destination" time="0.975937">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-format check destination" time="0.9564">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -217,7 +217,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-format check type" time="1.051032">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-format check type" time="0.853247">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed
@@ -227,7 +227,7 @@ And response content Type is json...........................................pass
 And response Body contains..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-format check placeId" time="0.928862">
+<testcase classname="This feature file validates the scenarios for the search query based on the information provided" name="3) Validate negative validations for fields in the payload-format check placeId" time="0.819045">
 <system-out><![CDATA[Given Testing environment...................................................passed
 When I pass headers.........................................................passed
 And I pass body as "postSearchRequests".....................................passed

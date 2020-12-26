@@ -163,7 +163,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3013765701,
+  "duration": 1471132700,
   "status": "passed"
 });
 formatter.scenario({
@@ -308,21 +308,21 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 2856067400,
+  "duration": 2918332901,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 1424033100,
+  "duration": 959254300,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setQueryParam(String,String\u003e)"
 });
 formatter.result({
-  "duration": 47379300,
+  "duration": 25327901,
   "status": "passed"
 });
 formatter.match({
@@ -335,7 +335,7 @@ formatter.match({
   "location": "CommonSteps.invokeGETOperation(String)"
 });
 formatter.result({
-  "duration": 4873205200,
+  "duration": 4066267801,
   "status": "passed"
 });
 formatter.match({
@@ -348,25 +348,25 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 114348400,
+  "duration": 135895400,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 30717901,
+  "duration": 137007700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 15440500,
+  "duration": 18615300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 477001,
+  "duration": 1282501,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -564,7 +564,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 6958801,
+  "duration": 152267999,
   "status": "passed"
 });
 formatter.scenario({
@@ -672,21 +672,21 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 1286300,
+  "duration": 656401,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 17695799,
+  "duration": 18606100,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setQueryParam(String,String\u003e)"
 });
 formatter.result({
-  "duration": 441801,
+  "duration": 1175701,
   "status": "passed"
 });
 formatter.match({
@@ -699,7 +699,7 @@ formatter.match({
   "location": "CommonSteps.invokeGETOperation(String)"
 });
 formatter.result({
-  "duration": 1932253500,
+  "duration": 1589565301,
   "status": "passed"
 });
 formatter.match({
@@ -712,30 +712,30 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 1961700,
+  "duration": 723400,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 1311000,
+  "duration": 699800,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 1368701,
+  "duration": 834000,
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 959599,
+  "duration": 401200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 13593700,
+  "duration": 11645800,
   "status": "passed"
 });
 formatter.scenario({
@@ -843,21 +843,21 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 1873499,
+  "duration": 1160400,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 9912400,
+  "duration": 3178700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setQueryParam(String,String\u003e)"
 });
 formatter.result({
-  "duration": 388300,
+  "duration": 273100,
   "status": "passed"
 });
 formatter.match({
@@ -870,7 +870,7 @@ formatter.match({
   "location": "CommonSteps.invokeGETOperation(String)"
 });
 formatter.result({
-  "duration": 1670089701,
+  "duration": 1314979700,
   "status": "passed"
 });
 formatter.match({
@@ -883,30 +883,30 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 1521101,
+  "duration": 1290101,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 1378500,
+  "duration": 1419700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 526801,
+  "duration": 485801,
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 196900,
+  "duration": 181501,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4660300,
+  "duration": 4071799,
   "status": "passed"
 });
 formatter.scenario({
@@ -1014,21 +1014,21 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 745400,
+  "duration": 744901,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 1578900,
+  "duration": 2310800,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setQueryParam(String,String\u003e)"
 });
 formatter.result({
-  "duration": 329301,
+  "duration": 200899,
   "status": "passed"
 });
 formatter.match({
@@ -1041,7 +1041,7 @@ formatter.match({
   "location": "CommonSteps.invokeGETOperation(String)"
 });
 formatter.result({
-  "duration": 1054356000,
+  "duration": 869920600,
   "status": "passed"
 });
 formatter.match({
@@ -1054,30 +1054,30 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 1244300,
+  "duration": 1148200,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 1340900,
+  "duration": 901300,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 993600,
+  "duration": 676499,
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 260200,
+  "duration": 158299,
   "status": "passed"
 });
 formatter.before({
-  "duration": 8134900,
+  "duration": 3922700,
   "status": "passed"
 });
 formatter.scenario({
@@ -1185,21 +1185,21 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 624101,
+  "duration": 623500,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2746600,
+  "duration": 1203801,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setQueryParam(String,String\u003e)"
 });
 formatter.result({
-  "duration": 570700,
+  "duration": 288500,
   "status": "passed"
 });
 formatter.match({
@@ -1212,7 +1212,7 @@ formatter.match({
   "location": "CommonSteps.invokeGETOperation(String)"
 });
 formatter.result({
-  "duration": 986894699,
+  "duration": 821486900,
   "status": "passed"
 });
 formatter.match({
@@ -1225,30 +1225,30 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 3437000,
+  "duration": 1488800,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 2373400,
+  "duration": 1138799,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 802999,
+  "duration": 512100,
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 303101,
+  "duration": 139499,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5714500,
+  "duration": 5157899,
   "status": "passed"
 });
 formatter.scenario({
@@ -1356,21 +1356,21 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 647299,
+  "duration": 499301,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 5661701,
+  "duration": 3656200,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setQueryParam(String,String\u003e)"
 });
 formatter.result({
-  "duration": 337600,
+  "duration": 221900,
   "status": "passed"
 });
 formatter.match({
@@ -1383,7 +1383,7 @@ formatter.match({
   "location": "CommonSteps.invokeGETOperation(String)"
 });
 formatter.result({
-  "duration": 965333601,
+  "duration": 921549100,
   "status": "passed"
 });
 formatter.match({
@@ -1396,30 +1396,30 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 1902000,
+  "duration": 2070200,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 975500,
+  "duration": 3151400,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 801100,
+  "duration": 957599,
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 260800,
+  "duration": 134700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 8465601,
+  "duration": 6552700,
   "status": "passed"
 });
 formatter.scenario({
@@ -1527,21 +1527,21 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 535699,
+  "duration": 421700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 1624199,
+  "duration": 1273800,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setQueryParam(String,String\u003e)"
 });
 formatter.result({
-  "duration": 258800,
+  "duration": 332801,
   "status": "passed"
 });
 formatter.match({
@@ -1554,7 +1554,7 @@ formatter.match({
   "location": "CommonSteps.invokeGETOperation(String)"
 });
 formatter.result({
-  "duration": 881025499,
+  "duration": 800677201,
   "status": "passed"
 });
 formatter.match({
@@ -1567,26 +1567,26 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 954499,
+  "duration": 1665400,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 1519699,
+  "duration": 754900,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 669100,
+  "duration": 664600,
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 200999,
+  "duration": 169300,
   "status": "passed"
 });
 formatter.uri("POSTSearchRequest.feature");
@@ -1823,7 +1823,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 15449100,
+  "duration": 4832300,
   "status": "passed"
 });
 formatter.scenario({
@@ -2028,14 +2028,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 1488301,
+  "duration": 463800,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 4198900,
+  "duration": 9806200,
   "status": "passed"
 });
 formatter.match({
@@ -2048,7 +2048,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 28624499,
+  "duration": 17072200,
   "status": "passed"
 });
 formatter.match({
@@ -2061,7 +2061,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 1383891400,
+  "duration": 1246986400,
   "status": "passed"
 });
 formatter.match({
@@ -2074,25 +2074,25 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 2821899,
+  "duration": 681000,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 10288800,
+  "duration": 4284000,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 823899,
+  "duration": 611900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 209600,
+  "duration": 124100,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2349,7 +2349,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 11122800,
+  "duration": 4893700,
   "status": "passed"
 });
 formatter.scenario({
@@ -2516,14 +2516,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 738800,
+  "duration": 372100,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 4878600,
+  "duration": 1443101,
   "status": "passed"
 });
 formatter.match({
@@ -2536,7 +2536,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 3274300,
+  "duration": 1358801,
   "status": "passed"
 });
 formatter.match({
@@ -2549,7 +2549,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 1099272701,
+  "duration": 865946800,
   "status": "passed"
 });
 formatter.match({
@@ -2562,29 +2562,29 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 1123100,
+  "duration": 2475400,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 937501,
+  "duration": 1058099,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 398900,
+  "duration": 183400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 241000,
+  "duration": 197500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 12255000,
+  "duration": 6802600,
   "status": "passed"
 });
 formatter.scenario({
@@ -2751,14 +2751,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 646201,
+  "duration": 800500,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 5095600,
+  "duration": 2096900,
   "status": "passed"
 });
 formatter.match({
@@ -2771,7 +2771,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 2711100,
+  "duration": 3581200,
   "status": "passed"
 });
 formatter.match({
@@ -2784,7 +2784,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 980715800,
+  "duration": 912578701,
   "status": "passed"
 });
 formatter.match({
@@ -2797,29 +2797,29 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 1788900,
+  "duration": 979500,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 5009901,
+  "duration": 875801,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 377400,
+  "duration": 661199,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1699200,
+  "duration": 287199,
   "status": "passed"
 });
 formatter.before({
-  "duration": 47677800,
+  "duration": 10081500,
   "status": "passed"
 });
 formatter.scenario({
@@ -2986,14 +2986,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 334400,
+  "duration": 322100,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2360599,
+  "duration": 1042700,
   "status": "passed"
 });
 formatter.match({
@@ -3006,7 +3006,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 1624999,
+  "duration": 1325900,
   "status": "passed"
 });
 formatter.match({
@@ -3019,7 +3019,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 1051239200,
+  "duration": 802100000,
   "status": "passed"
 });
 formatter.match({
@@ -3032,29 +3032,29 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 4820100,
+  "duration": 1156301,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 1832000,
+  "duration": 711200,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 214800,
+  "duration": 178801,
   "status": "passed"
 });
 formatter.after({
-  "duration": 362900,
+  "duration": 173700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5958301,
+  "duration": 5936600,
   "status": "passed"
 });
 formatter.scenario({
@@ -3221,14 +3221,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 885100,
+  "duration": 297499,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 1051900,
+  "duration": 690000,
   "status": "passed"
 });
 formatter.match({
@@ -3241,7 +3241,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 2757500,
+  "duration": 1063000,
   "status": "passed"
 });
 formatter.match({
@@ -3254,7 +3254,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 1130425700,
+  "duration": 788971700,
   "status": "passed"
 });
 formatter.match({
@@ -3267,25 +3267,25 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 942100,
+  "duration": 644899,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 1169200,
+  "duration": 837700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 190900,
+  "duration": 175700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 396400,
+  "duration": 341800,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -3602,7 +3602,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 10311399,
+  "duration": 4765000,
   "status": "passed"
 });
 formatter.scenario({
@@ -3769,14 +3769,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 1132900,
+  "duration": 327800,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2150500,
+  "duration": 1101599,
   "status": "passed"
 });
 formatter.match({
@@ -3789,7 +3789,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 2549699,
+  "duration": 1074101,
   "status": "passed"
 });
 formatter.match({
@@ -3802,7 +3802,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 1372475100,
+  "duration": 830904600,
   "status": "passed"
 });
 formatter.match({
@@ -3815,29 +3815,29 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 958600,
+  "duration": 968199,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 1130400,
+  "duration": 1586099,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 191000,
+  "duration": 159800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 235400,
+  "duration": 1435401,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6804000,
+  "duration": 6539201,
   "status": "passed"
 });
 formatter.scenario({
@@ -4004,14 +4004,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 925400,
+  "duration": 1269700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2004400,
+  "duration": 1396799,
   "status": "passed"
 });
 formatter.match({
@@ -4024,7 +4024,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 2230999,
+  "duration": 2128901,
   "status": "passed"
 });
 formatter.match({
@@ -4037,7 +4037,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 1113868900,
+  "duration": 888038699,
   "status": "passed"
 });
 formatter.match({
@@ -4050,29 +4050,29 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 2244199,
+  "duration": 1084700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 3824200,
+  "duration": 847700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 212499,
+  "duration": 180200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1344800,
+  "duration": 411800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 20868500,
+  "duration": 4881400,
   "status": "passed"
 });
 formatter.scenario({
@@ -4239,14 +4239,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 1789100,
+  "duration": 591800,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 3199200,
+  "duration": 4695299,
   "status": "passed"
 });
 formatter.match({
@@ -4259,7 +4259,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 2695500,
+  "duration": 1447099,
   "status": "passed"
 });
 formatter.match({
@@ -4272,7 +4272,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 1049744400,
+  "duration": 834046000,
   "status": "passed"
 });
 formatter.match({
@@ -4285,29 +4285,29 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 682900,
+  "duration": 646001,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 549101,
+  "duration": 594000,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 202300,
+  "duration": 129500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 391299,
+  "duration": 203500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 9531101,
+  "duration": 8828700,
   "status": "passed"
 });
 formatter.scenario({
@@ -4474,14 +4474,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 2962600,
+  "duration": 924300,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 6423800,
+  "duration": 5670600,
   "status": "passed"
 });
 formatter.match({
@@ -4494,7 +4494,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 5160801,
+  "duration": 13799500,
   "status": "passed"
 });
 formatter.match({
@@ -4507,7 +4507,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 988888300,
+  "duration": 811445000,
   "status": "passed"
 });
 formatter.match({
@@ -4520,29 +4520,29 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 2095200,
+  "duration": 1401699,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 2030199,
+  "duration": 2259699,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 1238799,
+  "duration": 595600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1923899,
+  "duration": 724101,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7011399,
+  "duration": 3554099,
   "status": "passed"
 });
 formatter.scenario({
@@ -4709,14 +4709,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 741600,
+  "duration": 403399,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 3428501,
+  "duration": 854099,
   "status": "passed"
 });
 formatter.match({
@@ -4729,7 +4729,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 2914199,
+  "duration": 1006200,
   "status": "passed"
 });
 formatter.match({
@@ -4742,7 +4742,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 959118300,
+  "duration": 948152400,
   "status": "passed"
 });
 formatter.match({
@@ -4755,29 +4755,29 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 1505300,
+  "duration": 1056700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 727099,
+  "duration": 992800,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 163900,
+  "duration": 192400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 327000,
+  "duration": 188099,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5772501,
+  "duration": 4607800,
   "status": "passed"
 });
 formatter.scenario({
@@ -4944,14 +4944,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 633500,
+  "duration": 395800,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 1924200,
+  "duration": 1843200,
   "status": "passed"
 });
 formatter.match({
@@ -4964,7 +4964,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 2159599,
+  "duration": 1007800,
   "status": "passed"
 });
 formatter.match({
@@ -4977,7 +4977,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 1038895100,
+  "duration": 843368100,
   "status": "passed"
 });
 formatter.match({
@@ -4990,29 +4990,29 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 722800,
+  "duration": 1038700,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 527300,
+  "duration": 654199,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 223000,
+  "duration": 170699,
   "status": "passed"
 });
 formatter.after({
-  "duration": 174400,
+  "duration": 161200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6437400,
+  "duration": 6780600,
   "status": "passed"
 });
 formatter.scenario({
@@ -5179,14 +5179,14 @@ formatter.match({
   "location": "CommonSteps.getBaseURI()"
 });
 formatter.result({
-  "duration": 483000,
+  "duration": 329499,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.setHeaders(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2031700,
+  "duration": 1677801,
   "status": "passed"
 });
 formatter.match({
@@ -5199,7 +5199,7 @@ formatter.match({
   "location": "CommonSteps.setBody(String,String,String\u003e)"
 });
 formatter.result({
-  "duration": 2034100,
+  "duration": 1662700,
   "status": "passed"
 });
 formatter.match({
@@ -5212,7 +5212,7 @@ formatter.match({
   "location": "CommonSteps.invokePOSTOperation(String)"
 });
 formatter.result({
-  "duration": 916461700,
+  "duration": 807340200,
   "status": "passed"
 });
 formatter.match({
@@ -5225,25 +5225,25 @@ formatter.match({
   "location": "CommonSteps.verifyHTTPStatusCode(String)"
 });
 formatter.result({
-  "duration": 573801,
+  "duration": 519500,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseContentType()"
 });
 formatter.result({
-  "duration": 574601,
+  "duration": 507299,
   "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
 });
 formatter.result({
-  "duration": 125700,
+  "duration": 110101,
   "status": "passed"
 });
 formatter.after({
-  "duration": 140401,
+  "duration": 117599,
   "status": "passed"
 });
 });
