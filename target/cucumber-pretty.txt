@@ -1,0 +1,297 @@
+Feature: GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter
+
+  @hotels_Regression
+  Scenario Outline: 1) Verify hotel details are fetched for location - <query> # GETHotelsByLocation.feature:4
+    Given Testing environment
+    When I pass headers
+    And I pass queryParameters
+    And I perform GET operation "<resourceName>"
+    Then I should get "<status>" response
+    And response content Type is json
+    And response Body contains
+
+    Examples: 
+
+  @hotels_Regression
+  Scenario Outline: 1) Verify hotel details are fetched for location - <query> # GETHotelsByLocation.feature:27
+    Given Testing environment                                                  # CommonSteps.getBaseURI()
+    When I pass headers                                                        # CommonSteps.setHeaders(String,String>)
+    And I pass queryParameters                                                 # CommonSteps.setQueryParam(String,String>)
+    And I perform GET operation "getHotelsByLocation"                          # CommonSteps.invokeGETOperation(String)
+    Then I should get "200" response                                           # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                          # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                 # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 2) Verify error code and description for negative values - <scenario> # GETHotelsByLocation.feature:30
+    Given Testing environment
+    When I pass headers
+    And I pass queryParameters
+    And I perform GET operation "<resourceName>"
+    Then I should get "<status>" response
+    And response content Type is json
+    And response Body contains
+
+    #statuscode mentioned as 200 for the scenarios where it should fail but is actually 200 OK given by the system
+    Examples: 
+
+  @hotels_Regression
+  Scenario Outline: 2) Verify error code and description for negative values - invalid location value-special chars # GETHotelsByLocation.feature:48
+    Given Testing environment                                                                                       # CommonSteps.getBaseURI()
+    When I pass headers                                                                                             # CommonSteps.setHeaders(String,String>)
+    And I pass queryParameters                                                                                      # CommonSteps.setQueryParam(String,String>)
+    And I perform GET operation "getHotelsByLocation"                                                               # CommonSteps.invokeGETOperation(String)
+    Then I should get "200" response                                                                                # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                               # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                                      # CommonSteps.verifyResponseBodyValues(DataTable)
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)
+      	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
+
+
+  @hotels_Regression
+  Scenario Outline: 2) Verify error code and description for negative values - invalid location value-location doesn't exist # GETHotelsByLocation.feature:49
+    Given Testing environment                                                                                                # CommonSteps.getBaseURI()
+    When I pass headers                                                                                                      # CommonSteps.setHeaders(String,String>)
+    And I pass queryParameters                                                                                               # CommonSteps.setQueryParam(String,String>)
+    And I perform GET operation "getHotelsByLocation"                                                                        # CommonSteps.invokeGETOperation(String)
+    Then I should get "200" response                                                                                         # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                                        # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                                               # CommonSteps.verifyResponseBodyValues(DataTable)
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)
+      	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
+
+
+  @hotels_Regression
+  Scenario Outline: 2) Verify error code and description for negative values - passing empty value # GETHotelsByLocation.feature:50
+    Given Testing environment                                                                      # CommonSteps.getBaseURI()
+    When I pass headers                                                                            # CommonSteps.setHeaders(String,String>)
+    And I pass queryParameters                                                                     # CommonSteps.setQueryParam(String,String>)
+    And I perform GET operation "getHotelsByLocation"                                              # CommonSteps.invokeGETOperation(String)
+    Then I should get "200" response                                                               # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                              # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                     # CommonSteps.verifyResponseBodyValues(DataTable)
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)
+      	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
+
+
+  @hotels_Regression
+  Scenario Outline: 2) Verify error code and description for negative values - passing invalid value # GETHotelsByLocation.feature:51
+    Given Testing environment                                                                        # CommonSteps.getBaseURI()
+    When I pass headers                                                                              # CommonSteps.setHeaders(String,String>)
+    And I pass queryParameters                                                                       # CommonSteps.setQueryParam(String,String>)
+    And I perform GET operation "getHotelsByLocation"                                                # CommonSteps.invokeGETOperation(String)
+    Then I should get "200" response                                                                 # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                       # CommonSteps.verifyResponseBodyValues(DataTable)
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)
+      	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
+
+
+  @hotels_Regression
+  Scenario Outline: 2) Verify error code and description for negative values - passing empty query param # GETHotelsByLocation.feature:52
+    Given Testing environment                                                                            # CommonSteps.getBaseURI()
+    When I pass headers                                                                                  # CommonSteps.setHeaders(String,String>)
+    And I pass queryParameters                                                                           # CommonSteps.setQueryParam(String,String>)
+    And I perform GET operation "getHotelsByLocation"                                                    # CommonSteps.invokeGETOperation(String)
+    Then I should get "200" response                                                                     # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                    # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                           # CommonSteps.verifyResponseBodyValues(DataTable)
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)
+      	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
+
+
+  @hotels_Regression
+  Scenario Outline: 2) Verify error code and description for negative values - passing empty query param  and value # GETHotelsByLocation.feature:53
+    Given Testing environment                                                                                       # CommonSteps.getBaseURI()
+    When I pass headers                                                                                             # CommonSteps.setHeaders(String,String>)
+    And I pass queryParameters                                                                                      # CommonSteps.setQueryParam(String,String>)
+    And I perform GET operation "getHotelsByLocation"                                                               # CommonSteps.invokeGETOperation(String)
+    Then I should get "200" response                                                                                # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                               # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                                      # CommonSteps.verifyResponseBodyValues(DataTable)
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)
+      	at ✽.And response Body contains(GETHotelsByLocation.feature:40)
+
+Feature: This feature file validates the scenarios for the search query based on the information provided
+
+  @hotels_Regression
+  Scenario Outline: 1) Verify that search action is performed for the payload. # POSTSearchRequest.feature:4
+    Given Testing environment
+    When I pass headers
+    And I pass body as "<resourceName>"
+    And I perform POST operation "<resourceName>"
+    Then I should get "<status>" response
+    And response content Type is json
+    And response Body contains
+
+    Examples: 
+
+  @hotels_Regression
+  Scenario Outline: 1) Verify that search action is performed for the payload. # POSTSearchRequest.feature:34
+    Given Testing environment                                                  # CommonSteps.getBaseURI()
+    When I pass headers                                                        # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                    # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                          # CommonSteps.invokePOSTOperation(String)
+    Then I should get "200" response                                           # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                          # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                 # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 2) Validate mandatory fields in the payload-<scenario> # POSTSearchRequest.feature:37
+    Given Testing environment
+    When I pass headers
+    And I pass body as "<resourceName>"
+    And I perform POST operation "<resourceName>"
+    Then I should get "<status>" response
+    And response content Type is json
+    And response Body contains
+
+    #statuscode mentioned as 200 for the scenarios where it should fail but is actually 200 OK given by the system
+    Examples: 
+
+  @hotels_Regression
+  Scenario Outline: 2) Validate mandatory fields in the payload-mandatory check-checkin date # POSTSearchRequest.feature:61
+    Given Testing environment                                                                # CommonSteps.getBaseURI()
+    When I pass headers                                                                      # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                  # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                        # CommonSteps.invokePOSTOperation(String)
+    Then I should get "200" response                                                         # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                        # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                               # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 2) Validate mandatory fields in the payload-mandatory check-checkout date # POSTSearchRequest.feature:62
+    Given Testing environment                                                                 # CommonSteps.getBaseURI()
+    When I pass headers                                                                       # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                   # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                         # CommonSteps.invokePOSTOperation(String)
+    Then I should get "200" response                                                          # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                         # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 2) Validate mandatory fields in the payload-mandatory check-destination # POSTSearchRequest.feature:63
+    Given Testing environment                                                               # CommonSteps.getBaseURI()
+    When I pass headers                                                                     # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                 # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                       # CommonSteps.invokePOSTOperation(String)
+    Then I should get "400" response                                                        # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                       # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                              # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 2) Validate mandatory fields in the payload-mandatory check-placeId # POSTSearchRequest.feature:64
+    Given Testing environment                                                           # CommonSteps.getBaseURI()
+    When I pass headers                                                                 # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                             # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                   # CommonSteps.invokePOSTOperation(String)
+    Then I should get "200" response                                                    # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                   # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                          # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 3) Validate negative validations for fields in the payload-<scenario> # POSTSearchRequest.feature:67
+    Given Testing environment
+    When I pass headers
+    And I pass body as "<resourceName>"
+    And I perform POST operation "<resourceName>"
+    Then I should get "<status>" response
+    And response content Type is json
+    And response Body contains
+
+    #statuscode mentioned as 200 for the scenarios where it should fail but is actually 200 OK given by the system
+    Examples: 
+
+  @hotels_Regression
+  Scenario Outline: 3) Validate negative validations for fields in the payload-checkin date format validation # POSTSearchRequest.feature:91
+    Given Testing environment                                                                                 # CommonSteps.getBaseURI()
+    When I pass headers                                                                                       # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                                   # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                                         # CommonSteps.invokePOSTOperation(String)
+    Then I should get "400" response                                                                          # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                         # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                                # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 3) Validate negative validations for fields in the payload-checkin date greater than checkout # POSTSearchRequest.feature:92
+    Given Testing environment                                                                                     # CommonSteps.getBaseURI()
+    When I pass headers                                                                                           # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                                       # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                                             # CommonSteps.invokePOSTOperation(String)
+    Then I should get "400" response                                                                              # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                             # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                                    # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 3) Validate negative validations for fields in the payload-format check-checkout date # POSTSearchRequest.feature:93
+    Given Testing environment                                                                             # CommonSteps.getBaseURI()
+    When I pass headers                                                                                   # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                               # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                                     # CommonSteps.invokePOSTOperation(String)
+    Then I should get "400" response                                                                      # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                     # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                            # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 3) Validate negative validations for fields in the payload-checkout date less than check in date # POSTSearchRequest.feature:94
+    Given Testing environment                                                                                        # CommonSteps.getBaseURI()
+    When I pass headers                                                                                              # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                                          # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                                                # CommonSteps.invokePOSTOperation(String)
+    Then I should get "400" response                                                                                 # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                                # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                                       # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 3) Validate negative validations for fields in the payload-format check destination # POSTSearchRequest.feature:95
+    Given Testing environment                                                                           # CommonSteps.getBaseURI()
+    When I pass headers                                                                                 # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                             # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                                   # CommonSteps.invokePOSTOperation(String)
+    Then I should get "200" response                                                                    # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                                   # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                          # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 3) Validate negative validations for fields in the payload-format check type # POSTSearchRequest.feature:96
+    Given Testing environment                                                                    # CommonSteps.getBaseURI()
+    When I pass headers                                                                          # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                      # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                            # CommonSteps.invokePOSTOperation(String)
+    Then I should get "200" response                                                             # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                            # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                   # CommonSteps.verifyResponseBodyValues(DataTable)
+
+  @hotels_Regression
+  Scenario Outline: 3) Validate negative validations for fields in the payload-format check placeId # POSTSearchRequest.feature:97
+    Given Testing environment                                                                       # CommonSteps.getBaseURI()
+    When I pass headers                                                                             # CommonSteps.setHeaders(String,String>)
+    And I pass body as "postSearchRequests"                                                         # CommonSteps.setBody(String,String,String>)
+    And I perform POST operation "postSearchRequests"                                               # CommonSteps.invokePOSTOperation(String)
+    Then I should get "200" response                                                                # CommonSteps.verifyHTTPStatusCode(String)
+    And response content Type is json                                                               # CommonSteps.verifyResponseContentType()
+    And response Body contains                                                                      # CommonSteps.verifyResponseBodyValues(DataTable)

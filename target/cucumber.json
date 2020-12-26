@@ -1,0 +1,4417 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3013765701,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "1) Verify hotel details are fetched for location - \u003cquery\u003e",
+        "description": "",
+        "id": "gethotelsbylocation---this-feature-file-validates-the-details-of-hotel-which-are-fetched-based-on-location-passed-as-the-query-parameter;1)-verify-hotel-details-are-fetched-for-location---\u003cquery\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 477001,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2856067400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1424033100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47379300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I pass queryParameters",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "query",
+                  "paris"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4873205200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I perform GET operation \"getHotelsByLocation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getHotelsByLocation",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114348400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30717901,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15440500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "hotels"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "hotelId"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "name"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "city"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "country"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "thumbnail_url"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "displayType"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "latitude"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "longitude"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "isActive"
+                ],
+                "line": 23
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6958801,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "2) Verify error code and description for negative values - invalid location value-special chars",
+        "description": "",
+        "id": "gethotelsbylocation---this-feature-file-validates-the-details-of-hotel-which-are-fetched-based-on-location-passed-as-the-query-parameter;2)-verify-error-code-and-description-for-negative-values---\u003cscenario\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 959599,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1286300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17695799,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Unique-Reference-Code",
+                  ""
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 441801,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParameters",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "matchedColumns": [
+              3,
+              6
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "query",
+                  "$\u0026+_\u003e\u003c"
+                ],
+                "line": 36
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1932253500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I perform GET operation \"getHotelsByLocation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getHotelsByLocation",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1961700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1311000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1368701,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "\u003cerrorcode\u003e"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 42
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13593700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "2) Verify error code and description for negative values - invalid location value-location doesn\u0027t exist",
+        "description": "",
+        "id": "gethotelsbylocation---this-feature-file-validates-the-details-of-hotel-which-are-fetched-based-on-location-passed-as-the-query-parameter;2)-verify-error-code-and-description-for-negative-values---\u003cscenario\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 196900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1873499,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9912400,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Unique-Reference-Code",
+                  ""
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 388300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParameters",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "matchedColumns": [
+              3,
+              6
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "query",
+                  "zxdfkl"
+                ],
+                "line": 36
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1670089701,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I perform GET operation \"getHotelsByLocation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getHotelsByLocation",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1521101,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1378500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 526801,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "\u003cerrorcode\u003e"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 42
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4660300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 50,
+        "name": "2) Verify error code and description for negative values - passing empty value",
+        "description": "",
+        "id": "gethotelsbylocation---this-feature-file-validates-the-details-of-hotel-which-are-fetched-based-on-location-passed-as-the-query-parameter;2)-verify-error-code-and-description-for-negative-values---\u003cscenario\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 260200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 745400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1578900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Unique-Reference-Code",
+                  ""
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 329301,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParameters",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "matchedColumns": [
+              3,
+              6
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "query",
+                  ""
+                ],
+                "line": 36
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1054356000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I perform GET operation \"getHotelsByLocation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getHotelsByLocation",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1244300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1340900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 993600,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "\u003cerrorcode\u003e"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 42
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8134900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "2) Verify error code and description for negative values - passing invalid value",
+        "description": "",
+        "id": "gethotelsbylocation---this-feature-file-validates-the-details-of-hotel-which-are-fetched-based-on-location-passed-as-the-query-parameter;2)-verify-error-code-and-description-for-negative-values---\u003cscenario\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 303101,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 624101,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2746600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Unique-Reference-Code",
+                  ""
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 570700,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParameters",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "matchedColumns": [
+              3,
+              6
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "q",
+                  "paris"
+                ],
+                "line": 36
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 986894699,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I perform GET operation \"getHotelsByLocation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getHotelsByLocation",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3437000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2373400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 802999,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "\u003cerrorcode\u003e"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 42
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5714500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 52,
+        "name": "2) Verify error code and description for negative values - passing empty query param",
+        "description": "",
+        "id": "gethotelsbylocation---this-feature-file-validates-the-details-of-hotel-which-are-fetched-based-on-location-passed-as-the-query-parameter;2)-verify-error-code-and-description-for-negative-values---\u003cscenario\u003e;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 260800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 647299,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5661701,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Unique-Reference-Code",
+                  ""
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 337600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParameters",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "matchedColumns": [
+              3,
+              6
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "",
+                  "paris"
+                ],
+                "line": 36
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 965333601,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I perform GET operation \"getHotelsByLocation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getHotelsByLocation",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1902000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 975500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 801100,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "\u003cerrorcode\u003e"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 42
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8465601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 53,
+        "name": "2) Verify error code and description for negative values - passing empty query param  and value",
+        "description": "",
+        "id": "gethotelsbylocation---this-feature-file-validates-the-details-of-hotel-which-are-fetched-based-on-location-passed-as-the-query-parameter;2)-verify-error-code-and-description-for-negative-values---\u003cscenario\u003e;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 200999,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 535699,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1624199,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Unique-Reference-Code",
+                  ""
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 258800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I pass queryParameters",
+            "match": {
+              "location": "CommonSteps.setQueryParam(String,String\u003e)"
+            },
+            "matchedColumns": [
+              3,
+              6
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "",
+                  "paris"
+                ],
+                "line": 36
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 881025499,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I perform GET operation \"getHotelsByLocation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getHotelsByLocation",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonSteps.invokeGETOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 954499,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1519699,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 669100,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.tajawal.stepdefs.CommonSteps.verifyResponseBodyValues(CommonSteps.java:390)\r\n\tat ✽.And response Body contains(GETHotelsByLocation.feature:40)\r\n",
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "\u003cerrorcode\u003e"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 42
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@hotels_Regression"
+          }
+        ]
+      }
+    ],
+    "name": "GETHotelsByLocation - This feature file validates the details of hotel which are fetched based on location passed as the query parameter",
+    "description": "",
+    "id": "gethotelsbylocation---this-feature-file-validates-the-details-of-hotel-which-are-fetched-based-on-location-passed-as-the-query-parameter",
+    "keyword": "Feature",
+    "uri": "GETHotelsByLocation.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15449100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "1) Verify that search action is performed for the payload.",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;1)-verify-that-search-action-is-performed-for-the-payload.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 209600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1488301,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4198900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28624499,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "04-01-2021"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01-2021"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "destination",
+                  "\u003cdestination\u003e"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NULL"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NULL"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 18
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1383891400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2821899,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10288800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 823899,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "type"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "query"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "queryParameters"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "sortBy"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "isGeo"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "hId"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "isCountry"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "placeId"
+                ],
+                "line": 30
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11122800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "2) Validate mandatory fields in the payload-mandatory check-checkin date",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;2)-validate-mandatory-fields-in-the-payload-\u003cscenario\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 241000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 738800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4878600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 40
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3274300,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "NA"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01-2021"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "destination",
+                  "paris"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NULL"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NULL"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 51
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1099272701,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1123100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 937501,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 398900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 56
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 36,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12255000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 62,
+        "name": "2) Validate mandatory fields in the payload-mandatory check-checkout date",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;2)-validate-mandatory-fields-in-the-payload-\u003cscenario\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1699200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 646201,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5095600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 40
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2711100,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "04-01-2021"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "NA"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "destination",
+                  "paris"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NULL"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NULL"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 51
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 980715800,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1788900,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5009901,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 377400,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 56
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 36,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 47677800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 63,
+        "name": "2) Validate mandatory fields in the payload-mandatory check-destination",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;2)-validate-mandatory-fields-in-the-payload-\u003cscenario\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 362900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 334400,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2360599,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 40
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1624999,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "04-01-2021"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01-2021"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "destination",
+                  "NA"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NA"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NA"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 51
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1051239200,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4820100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I should get \"400\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1832000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214800,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "The destination field is required."
+                ],
+                "line": 56
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 36,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5958301,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 64,
+        "name": "2) Validate mandatory fields in the payload-mandatory check-placeId",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;2)-validate-mandatory-fields-in-the-payload-\u003cscenario\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 396400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 885100,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1051900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 40
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2757500,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "04-01-2021"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01-2021"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "destination",
+                  "paris"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NA"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NA"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "NA"
+                ],
+                "line": 51
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1130425700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 942100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1169200,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 56
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 36,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10311399,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 91,
+        "name": "3) Validate negative validations for fields in the payload-checkin date format validation",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;3)-validate-negative-validations-for-fields-in-the-payload-\u003cscenario\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 235400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1132900,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2150500,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 70
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2549699,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "10-01"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01-2021"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "destination",
+                  "paris"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NULL"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NULL"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 81
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1372475100,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 958600,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I should get \"400\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1130400,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "The dates.checkin is not a valid date."
+                ],
+                "line": 86
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 66,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6804000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 92,
+        "name": "3) Validate negative validations for fields in the payload-checkin date greater than checkout",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;3)-validate-negative-validations-for-fields-in-the-payload-\u003cscenario\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1344800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 925400,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2004400,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 70
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2230999,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "11-01-2021"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01-2021"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "destination",
+                  "paris"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NULL"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NULL"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 81
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1113868900,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2244199,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I should get \"400\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3824200,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212499,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "The dates.checkout must be a date after dates.checkin."
+                ],
+                "line": 86
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 66,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20868500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 93,
+        "name": "3) Validate negative validations for fields in the payload-format check-checkout date",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;3)-validate-negative-validations-for-fields-in-the-payload-\u003cscenario\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 391299,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1789100,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3199200,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 70
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2695500,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "04-01-2021"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "destination",
+                  "paris"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NULL"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NULL"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 81
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1049744400,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 682900,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I should get \"400\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 549101,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 202300,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "The dates.checkout is not a valid date."
+                ],
+                "line": 86
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 66,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9531101,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 94,
+        "name": "3) Validate negative validations for fields in the payload-checkout date less than check in date",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;3)-validate-negative-validations-for-fields-in-the-payload-\u003cscenario\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1923899,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2962600,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6423800,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 70
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5160801,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "04-01-2021"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "03-01-2021"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "destination",
+                  "paris"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NULL"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NULL"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 81
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 988888300,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2095200,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I should get \"400\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2030199,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1238799,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "The dates.checkout must be a date after dates.checkin."
+                ],
+                "line": 86
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 66,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7011399,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 95,
+        "name": "3) Validate negative validations for fields in the payload-format check destination",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;3)-validate-negative-validations-for-fields-in-the-payload-\u003cscenario\u003e;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 327000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 741600,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3428501,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 70
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2914199,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "04-01-2021"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01-2021"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "destination",
+                  "(\u0026!\u003c\u003e\u003e\u003e"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NA"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NA"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 81
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 959118300,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1505300,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 727099,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163900,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 86
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 66,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5772501,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 96,
+        "name": "3) Validate negative validations for fields in the payload-format check type",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;3)-validate-negative-validations-for-fields-in-the-payload-\u003cscenario\u003e;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 174400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 633500,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1924200,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 70
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2159599,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "04-01-2021"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01-2021"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "destination",
+                  "paris"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "type1",
+                  "DHC"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NA"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NA"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "ChIJD7fiBh9u5kcRYJSMaMOCCwQ"
+                ],
+                "line": 81
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1038895100,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 722800,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 527300,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 223000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 86
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 66,
+            "name": "@hotels_Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6437400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.beforeEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 97,
+        "name": "3) Validate negative validations for fields in the payload-format check placeId",
+        "description": "",
+        "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided;3)-validate-negative-validations-for-fields-in-the-payload-\u003cscenario\u003e;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 140401,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.afterEveryScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 483000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Testing environment",
+            "match": {
+              "location": "CommonSteps.getBaseURI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2031700,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I pass headers",
+            "match": {
+              "location": "CommonSteps.setHeaders(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ],
+                "line": 70
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2034100,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I pass body as \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 16
+                }
+              ],
+              "location": "CommonSteps.setBody(String,String,String\u003e)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "checkin",
+                  "04-01-2021"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "checkout",
+                  "10-01-2021"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "destination",
+                  "paris"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "type1",
+                  "ADT"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "type2",
+                  "ADT"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "type3",
+                  "CHD"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "age1",
+                  "NA"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "age2",
+                  "NA"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "age3",
+                  "3"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "placeId",
+                  "+_}{}()"
+                ],
+                "line": 81
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 916461700,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I perform POST operation \"postSearchRequests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postSearchRequests",
+                  "offset": 26
+                }
+              ],
+              "location": "CommonSteps.invokePOSTOperation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 573801,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I should get \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 14
+                }
+              ],
+              "location": "CommonSteps.verifyHTTPStatusCode(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 574601,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "response content Type is json",
+            "match": {
+              "location": "CommonSteps.verifyResponseContentType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125700,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "response Body contains",
+            "match": {
+              "location": "CommonSteps.verifyResponseBodyValues(DataTable)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  ""
+                ],
+                "line": 86
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 66,
+            "name": "@hotels_Regression"
+          }
+        ]
+      }
+    ],
+    "name": "This feature file validates the scenarios for the search query based on the information provided",
+    "description": "",
+    "id": "this-feature-file-validates-the-scenarios-for-the-search-query-based-on-the-information-provided",
+    "keyword": "Feature",
+    "uri": "POSTSearchRequest.feature"
+  }
+]

@@ -1,0 +1,645 @@
+[
+  {
+    "source": "^I perform POST operation \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I perform POST operation \"postSearchRequests\"",
+        "aggregatedDurations": {
+          "average": 1.090416383,
+          "median": 1.0504918
+        },
+        "durations": [
+          {
+            "duration": 1.3838914,
+            "location": "POSTSearchRequest.feature:19"
+          },
+          {
+            "duration": 1.099272701,
+            "location": "POSTSearchRequest.feature:52"
+          },
+          {
+            "duration": 0.9807158,
+            "location": "POSTSearchRequest.feature:52"
+          },
+          {
+            "duration": 1.0512392,
+            "location": "POSTSearchRequest.feature:52"
+          },
+          {
+            "duration": 1.1304257,
+            "location": "POSTSearchRequest.feature:52"
+          },
+          {
+            "duration": 1.3724751,
+            "location": "POSTSearchRequest.feature:82"
+          },
+          {
+            "duration": 1.1138689,
+            "location": "POSTSearchRequest.feature:82"
+          },
+          {
+            "duration": 1.0497444,
+            "location": "POSTSearchRequest.feature:82"
+          },
+          {
+            "duration": 0.9888883,
+            "location": "POSTSearchRequest.feature:82"
+          },
+          {
+            "duration": 0.9591183,
+            "location": "POSTSearchRequest.feature:82"
+          },
+          {
+            "duration": 1.0388951,
+            "location": "POSTSearchRequest.feature:82"
+          },
+          {
+            "duration": 0.9164617,
+            "location": "POSTSearchRequest.feature:82"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I pass headers$",
+    "steps": [
+      {
+        "name": "I pass headers",
+        "aggregatedDurations": {
+          "average": 0.079052663,
+          "median": 0.0031992
+        },
+        "durations": [
+          {
+            "duration": 1.4240331,
+            "location": "GETHotelsByLocation.feature:6"
+          },
+          {
+            "duration": 0.017695799,
+            "location": "GETHotelsByLocation.feature:32"
+          },
+          {
+            "duration": 0.0099124,
+            "location": "GETHotelsByLocation.feature:32"
+          },
+          {
+            "duration": 0.0015789,
+            "location": "GETHotelsByLocation.feature:32"
+          },
+          {
+            "duration": 0.0027466,
+            "location": "GETHotelsByLocation.feature:32"
+          },
+          {
+            "duration": 0.005661701,
+            "location": "GETHotelsByLocation.feature:32"
+          },
+          {
+            "duration": 0.001624199,
+            "location": "GETHotelsByLocation.feature:32"
+          },
+          {
+            "duration": 0.0041989,
+            "location": "POSTSearchRequest.feature:6"
+          },
+          {
+            "duration": 0.0048786,
+            "location": "POSTSearchRequest.feature:39"
+          },
+          {
+            "duration": 0.0050956,
+            "location": "POSTSearchRequest.feature:39"
+          },
+          {
+            "duration": 0.002360599,
+            "location": "POSTSearchRequest.feature:39"
+          },
+          {
+            "duration": 0.0010519,
+            "location": "POSTSearchRequest.feature:39"
+          },
+          {
+            "duration": 0.0021505,
+            "location": "POSTSearchRequest.feature:69"
+          },
+          {
+            "duration": 0.0020044,
+            "location": "POSTSearchRequest.feature:69"
+          },
+          {
+            "duration": 0.0031992,
+            "location": "POSTSearchRequest.feature:69"
+          },
+          {
+            "duration": 0.0064238,
+            "location": "POSTSearchRequest.feature:69"
+          },
+          {
+            "duration": 0.003428501,
+            "location": "POSTSearchRequest.feature:69"
+          },
+          {
+            "duration": 0.0019242,
+            "location": "POSTSearchRequest.feature:69"
+          },
+          {
+            "duration": 0.0020317,
+            "location": "POSTSearchRequest.feature:69"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I pass queryParameters$",
+    "steps": [
+      {
+        "name": "I pass queryParameters",
+        "aggregatedDurations": {
+          "average": 0.007100828,
+          "median": 0.0003883
+        },
+        "durations": [
+          {
+            "duration": 0.0473793,
+            "location": "GETHotelsByLocation.feature:8"
+          },
+          {
+            "duration": 0.000441801,
+            "location": "GETHotelsByLocation.feature:35"
+          },
+          {
+            "duration": 0.0003883,
+            "location": "GETHotelsByLocation.feature:35"
+          },
+          {
+            "duration": 0.000329301,
+            "location": "GETHotelsByLocation.feature:35"
+          },
+          {
+            "duration": 0.0005707,
+            "location": "GETHotelsByLocation.feature:35"
+          },
+          {
+            "duration": 0.0003376,
+            "location": "GETHotelsByLocation.feature:35"
+          },
+          {
+            "duration": 0.0002588,
+            "location": "GETHotelsByLocation.feature:35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I perform GET operation \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I perform GET operation \"getHotelsByLocation\"",
+        "aggregatedDurations": {
+          "average": 1.766165457,
+          "median": 1.054356
+        },
+        "durations": [
+          {
+            "duration": 4.8732052,
+            "location": "GETHotelsByLocation.feature:10"
+          },
+          {
+            "duration": 1.9322535,
+            "location": "GETHotelsByLocation.feature:37"
+          },
+          {
+            "duration": 1.670089701,
+            "location": "GETHotelsByLocation.feature:37"
+          },
+          {
+            "duration": 1.054356,
+            "location": "GETHotelsByLocation.feature:37"
+          },
+          {
+            "duration": 0.986894699,
+            "location": "GETHotelsByLocation.feature:37"
+          },
+          {
+            "duration": 0.965333601,
+            "location": "GETHotelsByLocation.feature:37"
+          },
+          {
+            "duration": 0.881025499,
+            "location": "GETHotelsByLocation.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Testing environment$",
+    "steps": [
+      {
+        "name": "Testing environment",
+        "aggregatedDurations": {
+          "average": 0.15129161,
+          "median": 0.0007454
+        },
+        "durations": [
+          {
+            "duration": 2.8560674,
+            "location": "GETHotelsByLocation.feature:5"
+          },
+          {
+            "duration": 0.0012863,
+            "location": "GETHotelsByLocation.feature:31"
+          },
+          {
+            "duration": 0.001873499,
+            "location": "GETHotelsByLocation.feature:31"
+          },
+          {
+            "duration": 0.0007454,
+            "location": "GETHotelsByLocation.feature:31"
+          },
+          {
+            "duration": 0.000624101,
+            "location": "GETHotelsByLocation.feature:31"
+          },
+          {
+            "duration": 0.000647299,
+            "location": "GETHotelsByLocation.feature:31"
+          },
+          {
+            "duration": 0.000535699,
+            "location": "GETHotelsByLocation.feature:31"
+          },
+          {
+            "duration": 0.001488301,
+            "location": "POSTSearchRequest.feature:5"
+          },
+          {
+            "duration": 0.0007388,
+            "location": "POSTSearchRequest.feature:38"
+          },
+          {
+            "duration": 0.000646201,
+            "location": "POSTSearchRequest.feature:38"
+          },
+          {
+            "duration": 0.0003344,
+            "location": "POSTSearchRequest.feature:38"
+          },
+          {
+            "duration": 0.0008851,
+            "location": "POSTSearchRequest.feature:38"
+          },
+          {
+            "duration": 0.0011329,
+            "location": "POSTSearchRequest.feature:68"
+          },
+          {
+            "duration": 0.0009254,
+            "location": "POSTSearchRequest.feature:68"
+          },
+          {
+            "duration": 0.0017891,
+            "location": "POSTSearchRequest.feature:68"
+          },
+          {
+            "duration": 0.0029626,
+            "location": "POSTSearchRequest.feature:68"
+          },
+          {
+            "duration": 0.0007416,
+            "location": "POSTSearchRequest.feature:68"
+          },
+          {
+            "duration": 0.0006335,
+            "location": "POSTSearchRequest.feature:68"
+          },
+          {
+            "duration": 0.000483,
+            "location": "POSTSearchRequest.feature:68"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I pass body as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I pass body as \"postSearchRequests\"",
+        "aggregatedDurations": {
+          "average": 0.004894774,
+          "median": 0.0027033
+        },
+        "durations": [
+          {
+            "duration": 0.028624499,
+            "location": "POSTSearchRequest.feature:8"
+          },
+          {
+            "duration": 0.0032743,
+            "location": "POSTSearchRequest.feature:41"
+          },
+          {
+            "duration": 0.0027111,
+            "location": "POSTSearchRequest.feature:41"
+          },
+          {
+            "duration": 0.001624999,
+            "location": "POSTSearchRequest.feature:41"
+          },
+          {
+            "duration": 0.0027575,
+            "location": "POSTSearchRequest.feature:41"
+          },
+          {
+            "duration": 0.002549699,
+            "location": "POSTSearchRequest.feature:71"
+          },
+          {
+            "duration": 0.002230999,
+            "location": "POSTSearchRequest.feature:71"
+          },
+          {
+            "duration": 0.0026955,
+            "location": "POSTSearchRequest.feature:71"
+          },
+          {
+            "duration": 0.005160801,
+            "location": "POSTSearchRequest.feature:71"
+          },
+          {
+            "duration": 0.002914199,
+            "location": "POSTSearchRequest.feature:71"
+          },
+          {
+            "duration": 0.002159599,
+            "location": "POSTSearchRequest.feature:71"
+          },
+          {
+            "duration": 0.0020341,
+            "location": "POSTSearchRequest.feature:71"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should get \"([^\"]*)\" response$",
+    "steps": [
+      {
+        "name": "I should get \"200\" response",
+        "aggregatedDurations": {
+          "average": 0.009631921,
+          "median": 0.0015132
+        },
+        "durations": [
+          {
+            "duration": 0.1143484,
+            "location": "GETHotelsByLocation.feature:11"
+          },
+          {
+            "duration": 0.0019617,
+            "location": "GETHotelsByLocation.feature:38"
+          },
+          {
+            "duration": 0.001521101,
+            "location": "GETHotelsByLocation.feature:38"
+          },
+          {
+            "duration": 0.0012443,
+            "location": "GETHotelsByLocation.feature:38"
+          },
+          {
+            "duration": 0.003437,
+            "location": "GETHotelsByLocation.feature:38"
+          },
+          {
+            "duration": 0.001902,
+            "location": "GETHotelsByLocation.feature:38"
+          },
+          {
+            "duration": 0.000954499,
+            "location": "GETHotelsByLocation.feature:38"
+          },
+          {
+            "duration": 0.002821899,
+            "location": "POSTSearchRequest.feature:20"
+          },
+          {
+            "duration": 0.0011231,
+            "location": "POSTSearchRequest.feature:53"
+          },
+          {
+            "duration": 0.0017889,
+            "location": "POSTSearchRequest.feature:53"
+          },
+          {
+            "duration": 0.0009421,
+            "location": "POSTSearchRequest.feature:53"
+          },
+          {
+            "duration": 0.0015053,
+            "location": "POSTSearchRequest.feature:83"
+          },
+          {
+            "duration": 0.0007228,
+            "location": "POSTSearchRequest.feature:83"
+          },
+          {
+            "duration": 0.000573801,
+            "location": "POSTSearchRequest.feature:83"
+          }
+        ]
+      },
+      {
+        "name": "I should get \"400\" response",
+        "aggregatedDurations": {
+          "average": 0.002160199,
+          "median": 0.0020952
+        },
+        "durations": [
+          {
+            "duration": 0.0048201,
+            "location": "POSTSearchRequest.feature:53"
+          },
+          {
+            "duration": 0.0009586,
+            "location": "POSTSearchRequest.feature:83"
+          },
+          {
+            "duration": 0.002244199,
+            "location": "POSTSearchRequest.feature:83"
+          },
+          {
+            "duration": 0.0006829,
+            "location": "POSTSearchRequest.feature:83"
+          },
+          {
+            "duration": 0.0020952,
+            "location": "POSTSearchRequest.feature:83"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^response content Type is json$",
+    "steps": [
+      {
+        "name": "response content Type is json",
+        "aggregatedDurations": {
+          "average": 0.003590379,
+          "median": 0.0013409
+        },
+        "durations": [
+          {
+            "duration": 0.030717901,
+            "location": "GETHotelsByLocation.feature:12"
+          },
+          {
+            "duration": 0.001311,
+            "location": "GETHotelsByLocation.feature:39"
+          },
+          {
+            "duration": 0.0013785,
+            "location": "GETHotelsByLocation.feature:39"
+          },
+          {
+            "duration": 0.0013409,
+            "location": "GETHotelsByLocation.feature:39"
+          },
+          {
+            "duration": 0.0023734,
+            "location": "GETHotelsByLocation.feature:39"
+          },
+          {
+            "duration": 0.0009755,
+            "location": "GETHotelsByLocation.feature:39"
+          },
+          {
+            "duration": 0.001519699,
+            "location": "GETHotelsByLocation.feature:39"
+          },
+          {
+            "duration": 0.0102888,
+            "location": "POSTSearchRequest.feature:21"
+          },
+          {
+            "duration": 0.000937501,
+            "location": "POSTSearchRequest.feature:54"
+          },
+          {
+            "duration": 0.005009901,
+            "location": "POSTSearchRequest.feature:54"
+          },
+          {
+            "duration": 0.001832,
+            "location": "POSTSearchRequest.feature:54"
+          },
+          {
+            "duration": 0.0011692,
+            "location": "POSTSearchRequest.feature:54"
+          },
+          {
+            "duration": 0.0011304,
+            "location": "POSTSearchRequest.feature:84"
+          },
+          {
+            "duration": 0.0038242,
+            "location": "POSTSearchRequest.feature:84"
+          },
+          {
+            "duration": 0.000549101,
+            "location": "POSTSearchRequest.feature:84"
+          },
+          {
+            "duration": 0.002030199,
+            "location": "POSTSearchRequest.feature:84"
+          },
+          {
+            "duration": 0.000727099,
+            "location": "POSTSearchRequest.feature:84"
+          },
+          {
+            "duration": 0.0005273,
+            "location": "POSTSearchRequest.feature:84"
+          },
+          {
+            "duration": 0.000574601,
+            "location": "POSTSearchRequest.feature:84"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^response Body contains$",
+    "steps": [
+      {
+        "name": "response Body contains",
+        "aggregatedDurations": {
+          "average": 0.001523353,
+          "median": 0.0002148
+        },
+        "durations": [
+          {
+            "duration": 0.0154405,
+            "location": "GETHotelsByLocation.feature:13"
+          },
+          {
+            "duration": 0.000823899,
+            "location": "POSTSearchRequest.feature:22"
+          },
+          {
+            "duration": 0.0003989,
+            "location": "POSTSearchRequest.feature:55"
+          },
+          {
+            "duration": 0.0003774,
+            "location": "POSTSearchRequest.feature:55"
+          },
+          {
+            "duration": 0.0002148,
+            "location": "POSTSearchRequest.feature:55"
+          },
+          {
+            "duration": 0.0001909,
+            "location": "POSTSearchRequest.feature:55"
+          },
+          {
+            "duration": 0.000191,
+            "location": "POSTSearchRequest.feature:85"
+          },
+          {
+            "duration": 0.000212499,
+            "location": "POSTSearchRequest.feature:85"
+          },
+          {
+            "duration": 0.0002023,
+            "location": "POSTSearchRequest.feature:85"
+          },
+          {
+            "duration": 0.001238799,
+            "location": "POSTSearchRequest.feature:85"
+          },
+          {
+            "duration": 0.0001639,
+            "location": "POSTSearchRequest.feature:85"
+          },
+          {
+            "duration": 0.000223,
+            "location": "POSTSearchRequest.feature:85"
+          },
+          {
+            "duration": 0.0001257,
+            "location": "POSTSearchRequest.feature:85"
+          }
+        ]
+      }
+    ]
+  }
+]

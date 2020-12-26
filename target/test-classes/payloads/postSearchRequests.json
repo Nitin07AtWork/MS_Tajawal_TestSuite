@@ -1,0 +1,26 @@
+{
+	"dates": {
+		"checkin": "%checkin",
+		"checkout": "%checkout"
+	},
+	"destination": "%destination",
+	"room": [
+		{
+			"guest": [
+				{
+					"age": "%age1",
+					"type": "%type1"
+				},
+				{
+					"age": "%age2",
+					"type": "%type2"
+				},
+				{
+					"age": "%age3",
+					"type": "%type3"
+				}
+			]
+		}
+	],
+	"placeId": "%placeId"
+}
